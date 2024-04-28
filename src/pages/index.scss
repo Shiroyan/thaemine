@@ -1,0 +1,64 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+  background: linear-gradient(to bottom, transparent, #fff) #eceeef;
+}
+
+p {
+  margin: 0;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+.camera,
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+.camera {
+  perspective-origin: center center;
+  perspective: 500px;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.battle-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 600px;
+  height: 600px;
+  border: 1px solid #eee;
+  background-color: #333;
+  border-radius: 50%;
+  overflow: hidden;
+  // transform: rotateX(45deg);
+}
+
+.pattern {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  &-btn {
+    width: 100px;
+    height: 36px;
+    outline: none;
+    margin-right: 20px;
+  }
+}

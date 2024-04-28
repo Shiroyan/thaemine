@@ -1,0 +1,32 @@
+.dual-bar-circle {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .danger {
+    width: 100%;
+    height: 20%;
+    background: rgba(255, 0, 0, 0.6); /* 圆的颜色 */
+  }
+  .safe {
+    width: 100%;
+    height: 22.5%;
+    background-color: transparent;
+  }
+  .mid-safe {
+    width: 100%;
+    height: 15%;
+    background-color: transparent;
+  }
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

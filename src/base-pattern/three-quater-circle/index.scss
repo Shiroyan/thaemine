@@ -1,0 +1,17 @@
+.three-quarters-circle {
+  width: 100%; /* 圆的直径 */
+  height: 100%; /* 圆的直径 */
+  background: rgba(255, 0, 0, 0.6); /* 圆的颜色 */
+  border-radius: 50%; /* 确保它是一个完整的圆 */
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
