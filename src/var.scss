@@ -1,0 +1,11 @@
+$cwidth: 600px;
+$cheight: 600px;
+
+@media (max-width: 768px) {
+  $cwidth: 300px !important;
+  $cheight: 300px !important;
+  .battle-field {
+    width: $cwidth;
+    height: $cheight;
+  }
+}
